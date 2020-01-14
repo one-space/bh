@@ -1,0 +1,55 @@
+body{
+					width: 100%;
+					height: 100%;
+					margin: 0;
+					padding: 0;
+					background:url(./beijing.jpg) no-repeat;
+					background-size:cover;
+			}
+			.wen{
+				width: 100%;
+				height: 100%;
+				position: relative;
+				
+			}
+			.wen img{
+				width: 100%;
+				height: 100%;
+			}
+			h1{
+				width: 200px;
+				height: 30px;
+				position: absolute;
+				top: 65%;
+				left: 40%;
+			}
+			h1::after{
+				content: '';
+				width: 5px;
+				height: 5px;
+				display: inline-block;
+				box-shadow: 5px 0 0 currentcolor,15px 0 0 currentcolor,25px 0 0 currentcolor;
+				animation: dian 1s infinite;
+				animation-timing-function: inherit;
+			}
+			@keyframes dian{
+				from{
+					box-shadow: none;
+				}
+				20%{
+					box-shadow: 5px 0 0 currentcolor;
+				}
+				50%{
+					box-shadow: 5px 0 0 currentcolor,15px 0 0 currentcolor;
+				}
+				80%{
+					box-shadow: 5px 0 0 currentcolor,15px 0 0 currentcolor,25px 0 0 currentcolor;
+				}
+			}
+			.wen span{
+				
+				float: left;
+				font-size: 28px;
+				font-weight: 600px;
+				margin-left: 50px;
+			}
